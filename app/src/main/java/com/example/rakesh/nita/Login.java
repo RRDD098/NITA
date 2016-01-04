@@ -109,8 +109,7 @@ public class Login extends Activity {
         guest.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),
-                        MainActivity.class);
+                Intent i = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(i);
                 finish();
 

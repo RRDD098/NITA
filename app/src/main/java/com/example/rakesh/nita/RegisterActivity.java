@@ -15,15 +15,14 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.example.rakesh.nita.helper.SQLiteHandler;
+import com.example.rakesh.nita.helper.SessionManager;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import com.example.rakesh.nita.helper.SQLiteHandler;
-import com.example.rakesh.nita.helper.SessionManager;
 
 /**
  * Created by RAKESH on 28-Dec-15.
@@ -52,6 +51,7 @@ public class RegisterActivity extends Activity {
         // Progress dialog
         pDialog = new ProgressDialog(this);
         pDialog.setCancelable(false);
+        //
 
         // Session manager
         session = new SessionManager(getApplicationContext());
