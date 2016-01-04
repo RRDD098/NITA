@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Login"
+    android:scrollIndicators="right"
+    android:background="@drawable/nitawlper">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btnLogin"
+        android:clickable="false"
+        android:textColor="#ffffff"
+        android:shadowColor="#979a97"
+        android:shadowDx="10"
+        android:shadowDy="5"
+        android:shadowRadius="8"
+        android:background="#a31d03"
+        android:singleLine="false"
+        android:layout_below="@+id/password"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue as Guest"
+        android:id="@+id/guest"
+        android:textColor="#a31d03"
+        android:shadowColor="#ffffff"
+        android:shadowDx="10"
+        android:shadowDy="5"
+        android:shadowRadius="8"
+        android:background="#5dc512"
+        android:singleLine="false"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:gravity="top"
+        android:hint="Enter Email"
+        android:textSize="25dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:hint="Enter Password"
+        android:textSize="25dp"
+        android:layout_below="@+id/email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="NATIONAL INSTITUTE OF TECHNOLOGY  AGARTALA"
+        android:id="@+id/textView6"
+        android:textColor="#7b0505"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:shadowColor="#ffffff"
+        android:shadowDx="10"
+        android:shadowDy="5"
+        android:shadowRadius="8"
+        android:gravity="top|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Be a Menber! Register here."
+        android:id="@+id/signup"
+        android:editable="false"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:textColor="#d11a05"
+        android:shadowColor="#ffffff"
+        android:shadowDx="10"
+        android:shadowDy="5"
+        android:shadowRadius="8"
+        android:textStyle="bold"
+        android:layout_below="@+id/guest"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp" />
+
+</RelativeLayout>
